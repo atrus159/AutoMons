@@ -5,5 +5,7 @@ ds_list_add(types,flying_type)
 cost = 9
 draftSprite = charizard_draft
 benchSprite = charizard_bench
-dragSprite = charizard_bench
-playSprite = sprite011
+upSprite = charizard_up
+downSprite = charizard_down
+leftSprite = charizard_left
+rightSprite = charizard_right

@@ -1,4 +1,4 @@
 if(state == 3){
-	x -= 4
+	x -= 2
 	facing = 2
 }

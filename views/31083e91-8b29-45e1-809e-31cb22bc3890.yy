@@ -4,11 +4,9 @@
     "mvc": "1.1",
     "name": "31083e91-8b29-45e1-809e-31cb22bc3890",
     "children": [
-        "812ebdbd-9f77-4020-90d8-b095a9679c77",
-        "514ee7f9-3e3b-491a-956e-b71b5e606eb1",
-        "18d44b3d-2bc4-405b-b253-603aa2700644",
-        "dca54883-3659-4c9e-b26f-ca570836a4d9",
-        "2b2a3065-a0dc-4256-8e9e-0c1dbcade053"
+        "2b2a3065-a0dc-4256-8e9e-0c1dbcade053",
+        "060f4f66-1765-404c-b814-7e816d64c4d8",
+        "3aabd287-3499-4316-ad94-1083840abc8d"
     ],
     "filterType": "GMSprite",
     "folderName": "Charmander",

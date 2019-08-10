@@ -5,5 +5,7 @@ ds_list_add(types,flying_type)
 cost = 3
 draftSprite = golbat_draft
 benchSprite = golbat_bench
-dragSprite = golbat_bench
-playSprite = sprite011
+upSprite = golbat_up
+downSprite = golbat_down
+leftSprite = golbat_left
+rightSprite = golbat_right

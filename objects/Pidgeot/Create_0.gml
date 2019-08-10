@@ -5,5 +5,7 @@ ds_list_add(types,flying_type)
 cost = 9
 draftSprite = pidgeot_draft
 benchSprite = pidgeot_bench
-dragSprite = pidgeot_bench
-playSprite = sprite011
+upSprite = pidgeot_up
+downSprite = pidgeot_down
+leftSprite = pidgeot_left
+rightSprite = pidgeot_right

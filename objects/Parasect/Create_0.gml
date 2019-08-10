@@ -5,5 +5,7 @@ ds_list_add(types,grass_type)
 cost = 3
 draftSprite = parasect_draft
 benchSprite = parasect_bench
-dragSprite = parasect_bench
-playSprite = sprite011
+upSprite = parasect_up
+downSprite = parasect_down
+leftSprite = parasect_left
+rightSprite = parasect_right
