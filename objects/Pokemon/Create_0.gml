@@ -1,0 +1,15 @@
+name = "missingno"
+state = 0
+types = ds_list_create()
+evolves = noone
+cost = 1
+draftSprite = sprite0
+benchSprite = sprite01
+upSprite = charmander_up
+downSprite = charmander_down
+leftSprite = charmander_left
+rightSprite = charmander_right
+walkTimer = 0
+walkFrame = 0
+facing = 1
+walking = 0
