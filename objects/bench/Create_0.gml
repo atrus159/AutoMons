@@ -10,4 +10,4 @@ benchW = room_width-140
 benchH = 100
 cellW = 70
 offset = 50
-depth = 1
+depth = 3

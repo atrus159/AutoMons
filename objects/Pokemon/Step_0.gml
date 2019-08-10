@@ -5,9 +5,11 @@ if(walkTimer >15){
 }
 switch(state){
 	case 0:
+	depth = -4
 	mask_index = draft_mask
 	break;
 	case 1:
+	depth = 2.5
 	mask_index = bench_mask
 	if(evolves != noone){
 	var m1 = noone
@@ -26,7 +28,7 @@ switch(state){
 	if(m1 != noone && m2 != noone){
 			ds_list_replace(bench.benchList,ds_list_find_index(bench.benchList,m1),noone)
 			ds_list_replace(bench.benchList,ds_list_find_index(bench.benchList,m2),noone)
-			var myEvolve = instance_create_depth(0,0,0,evolves)
+			var myEvolve = instance_create_depth(x,y,1,evolves)
 			myEvolve.state = 1
 			ds_list_replace(bench.benchList,ds_list_find_index(bench.benchList,id),myEvolve)
 			instance_destroy(m1)
@@ -38,11 +40,13 @@ switch(state){
 	
 	break;
 	case 2:
+	depth = -2
 	x = mouse_x
 	y = mouse_y
 	break
 	
 	case 3:
+	depth = -(y/room_height)
 	walking = keyboard_check(vk_left) || keyboard_check(vk_right) || keyboard_check(vk_up) || keyboard_check(vk_down)
 	break;
 	

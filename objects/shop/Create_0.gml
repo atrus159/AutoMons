@@ -6,7 +6,7 @@ shopW = 750
 shopH = 250
 cellW = 140
 shopSize = 5
-depth = 1
+depth = -3
 offset =100
 yOff = 50
 randomize()

@@ -27,7 +27,7 @@ switch(state){
 				if(m1 != noone && m2 != noone){
 					ds_list_replace(bench.benchList,ds_list_find_index(bench.benchList,m1),noone)
 					ds_list_replace(bench.benchList,ds_list_find_index(bench.benchList,m2),noone)
-					var myEvolve = instance_create_depth(0,0,0,evolves)
+					var myEvolve = instance_create_depth(x,y,1,evolves)
 					myEvolve.state = 1
 					var pos = ds_list_find_index(shop.activeList,id)
 					if(pos != noone){

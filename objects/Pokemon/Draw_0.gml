@@ -50,5 +50,18 @@ switch(state){
 		draw_sprite_ext(downSprite,walkFrame*walking,x,y,2,2,0,c_white,1)
 		break;
 	}
+	if(collision_point(mouse_x,mouse_y,self,false,false)){
+		draw_set_color(c_dkgray)
+		draw_rectangle(x+30,y-180,x+130,y-20,false)
+		draw_sprite_ext(draftSprite,-1,x+80,y-140,0.5,0.5,0,c_white,1)
+		draw_types(x+80,y-100,types,1)
+		draw_set_font(font0)
+		draw_set_color(c_yellow)
+		draw_set_valign(fa_middle)
+		draw_set_halign(fa_center)
+		draw_text(x+80,y-80,name)
+		draw_circle(x+80,y-56,10,true)
+		draw_text(x+80,y-55,cost)
+	}
 	break
 }

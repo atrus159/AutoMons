@@ -359,6 +359,14 @@
             }
         },
         {
+            "Key": "2d130072-9129-43bc-a1a7-e7a2ca8e7029",
+            "Value": {
+                "id": "6765a907-5413-4939-813f-57be70352f86",
+                "resourcePath": "sprites\\blue_cell\\blue_cell.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "31083e91-8b29-45e1-809e-31cb22bc3890",
             "Value": {
                 "id": "be5c032a-74c5-4df3-910b-2794106342a2",
@@ -1275,6 +1283,14 @@
             "Value": {
                 "id": "53b93271-027c-4b7b-b612-18032b094921",
                 "resourcePath": "sprites\\rock_type\\rock_type.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c31c3589-2e58-4ff6-b2f2-4c7b06a01691",
+            "Value": {
+                "id": "bc76f7a7-f133-49ac-bcd4-6da2cd033e80",
+                "resourcePath": "sprites\\red_cell\\red_cell.yy",
                 "resourceType": "GMSprite"
             }
         },

@@ -13,6 +13,7 @@ switch(state){
 			instance_destroy(self)
 		}else{
 			state = 3	
+			move_snap(64,64)
 		}
 	
 	break;
