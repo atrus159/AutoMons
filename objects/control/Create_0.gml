@@ -9,3 +9,4 @@ boardY = 2
 boardCell = 64
 boardW = 8
 boardH = 8
+locked = false

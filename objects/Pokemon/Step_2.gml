@@ -54,3 +54,4 @@ if(evolves != noone && state != 0 && state != 2){
 			instance_destroy(self)
 	}
 }
+placeFlag = 0

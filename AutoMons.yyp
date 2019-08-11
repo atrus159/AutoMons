@@ -335,6 +335,14 @@
             }
         },
         {
+            "Key": "28bf633f-5070-4cd0-ab2a-0b7ba9e76ede",
+            "Value": {
+                "id": "0b29c2a2-ef21-4856-acae-90a1e23f7cbe",
+                "resourcePath": "scripts\\handle_packet\\handle_packet.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2941bdba-3ea0-4f21-95bc-204882889886",
             "Value": {
                 "id": "8bd5e005-c777-447e-8ed6-56632468b97c",
@@ -635,6 +643,14 @@
             "Value": {
                 "id": "08be7ef2-e6da-4469-b88e-011fde220740",
                 "resourcePath": "sprites\\golbat_down\\golbat_down.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "51f1a03f-ec3e-46b4-bd12-f05eec324449",
+            "Value": {
+                "id": "f395e27f-1b01-48a8-a107-8a7b80b6c7a4",
+                "resourcePath": "sprites\\play_mask\\play_mask.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1471,6 +1487,14 @@
             }
         },
         {
+            "Key": "d70710e9-4bc2-4dc6-905f-19e06e05c82f",
+            "Value": {
+                "id": "7f95b9e6-147b-4401-9b68-8e3a0132bc78",
+                "resourcePath": "objects\\obj_client\\obj_client.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d72a89de-f4b0-44c2-ab66-00c8cb95cebc",
             "Value": {
                 "id": "fc1f330e-ee26-4d30-9fae-84095026b9ac",
@@ -1690,7 +1714,8 @@
     "script_order": [
         "3c34469b-b328-4080-a6c8-246c9f3b7343",
         "e6aaae6e-60af-419b-a85e-efd08ff152bf",
-        "09cf5a5c-fbcb-4f6c-ace3-6b47b3104e7b"
+        "09cf5a5c-fbcb-4f6c-ace3-6b47b3104e7b",
+        "28bf633f-5070-4cd0-ab2a-0b7ba9e76ede"
     ],
     "tutorial": ""
 }
