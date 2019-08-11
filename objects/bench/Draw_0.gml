@@ -1,6 +1,5 @@
-draw_set_color(c_gray)
-draw_rectangle(benchX, benchY, benchX+benchW, benchY+benchH,false)
-draw_set_color(c_black)
+draw_sprite(bench_sprt,-1,benchX+5,benchY+20)
 for(var i = 0; i<benchSize; i++){
-	draw_rectangle(benchX+offset+i*cellW-cellW/2,benchY+ 10, benchX+offset+(i+1)*cellW-cellW/2,benchY+ 10+cellW,true)
+	draw_sprite(bench_tile,-1,benchX+offset+i*cellW,benchY+64)
+	//draw_rectangle(benchX+offset+i*cellW-cellW/2,benchY+ 10, benchX+offset+(i+1)*cellW-cellW/2,benchY+ 10+cellW,true)
 }

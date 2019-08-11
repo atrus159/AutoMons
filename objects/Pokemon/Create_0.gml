@@ -13,3 +13,4 @@ walkTimer = 0
 walkFrame = 0
 facing = 1
 walking = 0
+mouseTimer = 0

@@ -1,5 +1,6 @@
 switch(state){
 	case 2:
+
 		if(point_in_rectangle(x,y,bench.benchX, bench.benchY, bench.benchX+bench.benchW,bench.benchY+bench.benchH)){
 			
 			if(bench.benchCount<bench.benchSize){
@@ -8,14 +9,25 @@ switch(state){
 				 state = 1
 				 bench.benchCount ++
 			 }
-		}else if(point_in_rectangle(x,y,control.sellX, control.sellY, control.sellX+control.sellW,control.sellY+control.sellY)){
+		}else if(point_in_rectangle(x,y,control.sellX, control.sellY, control.sellX+control.sellW,control.sellY+control.sellH)){
 			control.money += cost
 			instance_destroy(self)
-		}else{
-			state = 3	
-			move_snap(64,64)
-		}
+
 	
+		}else{
+			var boardX = control.boardX
+			var boardY = control.boardY
+			var boardH = control.boardH
+			var boardW = control.boardW
+			var boardCell = control.boardCell
+
+		if(point_in_rectangle(x,y,boardX*boardCell, ((boardY-0.5+boardH/2))*boardCell, (boardX+boardW)*boardCell, (boardY+boardH)*boardCell)){
+			state = 3
+			move_snap(64,64)
+		}else{
+			
+		}
+		}
 	break;
 	
 }

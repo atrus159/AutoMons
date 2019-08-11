@@ -1,11 +1,11 @@
 money = 100
-sellX = 50
-sellY = 400
+sellX = 100
+sellY = 300
 sellW = 150
 sellH = 200
 depth = 4
 boardX = 5
-boardY = 1
+boardY = 2
 boardCell = 64
 boardW = 8
 boardH = 8

@@ -19,6 +19,8 @@ switch(state){
 	case 1:
 	draw_sprite(benchSprite,-1,x,y)
 	if(collision_point(mouse_x,mouse_y,self,false,false)){
+		mouseTimer ++
+		if(mouseTimer > 50){
 		draw_set_color(c_dkgray)
 		draw_rectangle(x+30,y-180,x+130,y-20,false)
 		draw_sprite_ext(draftSprite,-1,x+80,y-140,0.5,0.5,0,c_white,1)
@@ -30,6 +32,9 @@ switch(state){
 		draw_text(x+80,y-80,name)
 		draw_circle(x+80,y-56,10,true)
 		draw_text(x+80,y-55,cost)
+		}
+	}else{
+		mouseTimer = 0	
 	}
 	break
 	case 2:
@@ -51,6 +56,8 @@ switch(state){
 		break;
 	}
 	if(collision_point(mouse_x,mouse_y,self,false,false)){
+		mouseTimer ++
+		if(mouseTimer > 50){
 		draw_set_color(c_dkgray)
 		draw_rectangle(x+30,y-180,x+130,y-20,false)
 		draw_sprite_ext(draftSprite,-1,x+80,y-140,0.5,0.5,0,c_white,1)
@@ -62,6 +69,9 @@ switch(state){
 		draw_text(x+80,y-80,name)
 		draw_circle(x+80,y-56,10,true)
 		draw_text(x+80,y-55,cost)
+		}
+	}else{
+		mouseTimer = 0	
 	}
 	break
 }
