@@ -503,6 +503,14 @@
             }
         },
         {
+            "Key": "3f14438d-7c70-4461-98c0-6464f81f82e7",
+            "Value": {
+                "id": "88a224be-8a8c-4627-ba71-cb599e7384d6",
+                "resourcePath": "objects\\enemy_piece\\enemy_piece.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3fe390d9-c870-4e35-9bd3-63b7a0d03e6a",
             "Value": {
                 "id": "89883131-16f2-4152-8910-885947d66fcb",
@@ -687,6 +695,14 @@
             }
         },
         {
+            "Key": "598a1a77-a838-4cfe-a0fb-1c3e32338966",
+            "Value": {
+                "id": "4e2b591e-647c-4a9c-bf0d-9760b86f7ad7",
+                "resourcePath": "objects\\combat_handler\\combat_handler.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5b7b1f3d-bf1a-42e9-9f6c-5a1b1a9aa932",
             "Value": {
                 "id": "bfe75c31-b229-485a-b570-253344985ea1",
@@ -730,7 +746,7 @@
             "Key": "61152368-51bb-4cbd-8981-8a4d57d7c120",
             "Value": {
                 "id": "7dd18abf-8267-45b2-a2d6-0b5347e1ab6c",
-                "resourcePath": "objects\\Pidgy\\Pidgy.yy",
+                "resourcePath": "objects\\Pidgey\\Pidgey.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -804,6 +820,14 @@
                 "id": "427a85f6-9bad-48f2-89d4-969b173fde0e",
                 "resourcePath": "sprites\\bench_tile\\bench_tile.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6dd0828c-7dcd-4f75-86ed-0110203112b2",
+            "Value": {
+                "id": "42830ead-d7b8-46ce-891b-b9b93c92f01a",
+                "resourcePath": "objects\\ally_piece\\ally_piece.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1492,14 +1516,6 @@
                 "id": "3b17628f-65a6-4a17-a894-c7bbfd55e5ee",
                 "resourcePath": "sprites\\dragon_type\\dragon_type.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "d5438c3a-4708-413c-a1a7-71c41ec31ab8",
-            "Value": {
-                "id": "d66ea1e0-35a7-4fc7-bddf-cc973956266c",
-                "resourcePath": "objects\\WAR\\WAR.yy",
-                "resourceType": "GMObject"
             }
         },
         {

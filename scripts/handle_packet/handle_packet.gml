@@ -22,4 +22,51 @@ switch(messageId){
 			ds_list_replace(global.players,i,"noone")
 		}
 	break;
+	case 2: //ally piece message
+		var pieceId = buffer_read(buffer,buffer_u8)
+		var pieceX = buffer_read(buffer,buffer_u16)
+		var pieceY = buffer_read(buffer,buffer_u16)
+		var relX = pieceX*(control.boardCell/10)+(control.boardX)*control.boardCell
+		var relY = pieceY*(control.boardCell/10)+(control.boardY)*control.boardCell
+		with(combat_handler){
+			for(var i = 0; i<ds_list_size(ally_pieces); i++){
+				var curPiece = ds_list_find_value(ally_pieces,i)
+				if(curPiece != undefined && curPiece.piece_id == pieceId){
+					curPiece.x = relX
+					curPiece.y = relY
+					return
+				}
+			}
+			var newPiece = instance_create_depth(relX,relY,0,ally_piece)
+			ds_list_add(ally_pieces,newPiece)
+			newPiece.piece_id = pieceId
+			var typeIndex = buffer_read(buffer,buffer_u8)
+			newPiece.baseString = ds_list_find_value(global.pokeLookup,typeIndex)
+			newPiece.facing = buffer_read(buffer,buffer_u8)
+		}
+	
+	break;
+	case 3: //enemy piece message
+		var pieceId = buffer_read(buffer,buffer_u8)
+		var pieceX = buffer_read(buffer,buffer_u16)
+		var pieceY = buffer_read(buffer,buffer_u16)
+		var relX = pieceX*(control.boardCell/10)+(control.boardX)*control.boardCell
+		var relY = pieceY*(control.boardCell/10)+(control.boardY)*control.boardCell
+		with(combat_handler){
+			for(var i = 0; i<ds_list_size(enemy_pieces); i++){
+				var curPiece = ds_list_find_value(enemy_pieces,i)
+				if(curPiece != undefined && curPiece.piece_id == pieceId){
+					curPiece.x = relX
+					curPiece.y = relY
+					return
+				}
+			}
+			var newPiece = instance_create_depth(relX,relY,0,enemy_piece)
+			ds_list_add(enemy_pieces,newPiece)
+			newPiece.piece_id = pieceId
+			var typeIndex = buffer_read(buffer,buffer_u8)
+			newPiece.baseString = ds_list_find_value(global.pokeLookup,typeIndex)
+			newPiece.facing = buffer_read(buffer,buffer_u8)
+		}
+	break;
 }

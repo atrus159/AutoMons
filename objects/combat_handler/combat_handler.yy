@@ -1,23 +1,23 @@
 {
-    "id": "61152368-51bb-4cbd-8981-8a4d57d7c120",
+    "id": "598a1a77-a838-4cfe-a0fb-1c3e32338966",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "Pidgy",
+    "name": "combat_handler",
     "eventList": [
         {
-            "id": "ac3ef64d-75ae-4bb8-8a9d-54c4f004a98d",
+            "id": "27b2ddc6-09db-4e63-9990-9d87d23b5eda",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "61152368-51bb-4cbd-8981-8a4d57d7c120"
+            "m_owner": "598a1a77-a838-4cfe-a0fb-1c3e32338966"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "9d4a3c6d-83b4-4849-91df-374269bfdd86",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -33,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "48d078e2-498e-4626-8011-6f48783fadab",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }

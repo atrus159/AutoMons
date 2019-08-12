@@ -1,9 +1,18 @@
 if(oldState != global.gameState){
 	switch(global.gameState){
 		case 0:
+		with(ally_piece){
+			instance_destroy(self)	
+		}
+		with(enemy_piece){
+			instance_destroy(self)	
+		}
+		with(combat_handler){
+			ds_list_clear(ally_pieces)
+			ds_list_clear(enemy_pieces)	
+		}
 		locked = false
 		instance_activate_object(Pokemon)
-		instance_destroy(WAR)
 		break;
 		case 1:
 		locked = true
@@ -20,7 +29,6 @@ if(oldState != global.gameState){
 		}
 		break;
 		case 2:
-		instance_create_depth(500,500,-20,WAR)
 		break;
 		
 	}
