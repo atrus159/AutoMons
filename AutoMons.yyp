@@ -1103,6 +1103,14 @@
             }
         },
         {
+            "Key": "a224085e-dd5e-433c-83c8-1c25ed136ce9",
+            "Value": {
+                "id": "38475575-dcdc-4f58-bef9-38b8b01c2d04",
+                "resourcePath": "scripts\\send_pokemon\\send_pokemon.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a2274370-ff02-49c9-a114-d83f59f5c7cd",
             "Value": {
                 "id": "b3c13618-87df-4763-9db7-724e25544a8b",
@@ -1487,6 +1495,14 @@
             }
         },
         {
+            "Key": "d5438c3a-4708-413c-a1a7-71c41ec31ab8",
+            "Value": {
+                "id": "d66ea1e0-35a7-4fc7-bddf-cc973956266c",
+                "resourcePath": "objects\\WAR\\WAR.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d70710e9-4bc2-4dc6-905f-19e06e05c82f",
             "Value": {
                 "id": "7f95b9e6-147b-4401-9b68-8e3a0132bc78",
@@ -1715,7 +1731,8 @@
         "3c34469b-b328-4080-a6c8-246c9f3b7343",
         "e6aaae6e-60af-419b-a85e-efd08ff152bf",
         "09cf5a5c-fbcb-4f6c-ace3-6b47b3104e7b",
-        "28bf633f-5070-4cd0-ab2a-0b7ba9e76ede"
+        "28bf633f-5070-4cd0-ab2a-0b7ba9e76ede",
+        "a224085e-dd5e-433c-83c8-1c25ed136ce9"
     ],
     "tutorial": ""
 }

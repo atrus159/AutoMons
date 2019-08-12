@@ -10,3 +10,4 @@ boardCell = 64
 boardW = 8
 boardH = 8
 locked = false
+oldState = 0
