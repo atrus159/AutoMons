@@ -4,23 +4,28 @@ switch(messageId){
 	case 1: //daily packet
 		global.gameState = buffer_read(buffer,buffer_u8)
 		global.timer = buffer_read(buffer,buffer_u8)
-		global.playerCount = 0
-		while(buffer_sizeof(buffer)>0){
-			var char1 = buffer_read(buffer,buffer_u32)
-			if(char1 == 1){
-				break;	
-			}else{
-				var nameString = ""
-				nameString += chr(char1)
-				nameString += chr(buffer_read(buffer,buffer_u32))
-				nameString += chr(buffer_read(buffer,buffer_u32))
-				ds_list_replace(global.players,global.playerCount,nameString)
-				global.playerCount++
+		myId = buffer_read(buffer,buffer_u8)
+		playerCount = 0
+		var rollCall = ds_list_create()
+		while(buffer_tell(buffer)<buffer_get_size(buffer)){
+			var pID = buffer_read(buffer,buffer_u8)
+			ds_list_add(rollCall,pID)
+			if(ds_list_find_index(players,pID) == -1){
+				ds_list_add(players,pID)
+				ds_map_add(playerNames,pID, "New Player")
+			}
+			playerCount++
+		}
+		
+		for(var i = 0; i<ds_list_size(players); i++){
+			var curId = ds_list_find_value(players,i)
+			if(ds_list_find_index(rollCall,curId) == -1){
+				ds_map_delete(playerNames,curId)
+				ds_list_delete(players,i)
+				i--
 			}
 		}
-		for(var i = global.playerCount; i<ds_list_size(global.players); i++){
-			ds_list_replace(global.players,i,"noone")
-		}
+		ds_list_destroy(rollCall)
 	break;
 	case 2: //ally piece message
 		var pieceId = buffer_read(buffer,buffer_u8)
@@ -68,5 +73,13 @@ switch(messageId){
 			newPiece.baseString = ds_list_find_value(global.pokeLookup,typeIndex)
 			newPiece.facing = buffer_read(buffer,buffer_u8)
 		}
+	break;
+	case 4: //server name change
+		var changedId = buffer_read(buffer,buffer_u8)
+		var changedName = buffer_read(buffer,buffer_string)
+		ds_map_replace(playerNames,changedId,changedName)
+	break;
+	case 5:	//start signal
+		room_goto_next()
 	break;
 }
