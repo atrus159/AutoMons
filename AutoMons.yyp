@@ -1687,6 +1687,14 @@
             }
         },
         {
+            "Key": "eb84c988-eafe-4604-83e9-b3ec9ee853e0",
+            "Value": {
+                "id": "f6858485-b4ee-45b5-a791-34d52d280341",
+                "resourcePath": "sprites\\fake_game\\fake_game.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ee04b679-f6c2-4539-b6cf-d5c90218251e",
             "Value": {
                 "id": "e5d9e890-9aa9-44b2-b4e8-5a0bdb4f2ba0",

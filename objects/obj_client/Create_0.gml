@@ -11,6 +11,8 @@ playerNames = ds_map_create()
 gameState = 0
 timer = 35
 myId = -1
+opId = -1
+isFakeBattle = 0
 instance_destroy(get_ip)
 instance_create_depth(0,0,0,get_name)
 }else{

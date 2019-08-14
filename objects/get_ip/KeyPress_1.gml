@@ -16,5 +16,7 @@ switch(keyboard_lastkey){
 	case vk_enter:
 		instance_create_depth(0,0,0,obj_client)
 	break;
+	case vk_shift:
+	break;
 }
 }

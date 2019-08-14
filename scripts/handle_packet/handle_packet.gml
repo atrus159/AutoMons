@@ -82,4 +82,8 @@ switch(messageId){
 	case 5:	//start signal
 		room_goto_next()
 	break;
+	case 6: //update opponents
+		opId = buffer_read(buffer,buffer_u8)
+		isFakeBattle = buffer_read(buffer,buffer_u8)
+	break;
 }

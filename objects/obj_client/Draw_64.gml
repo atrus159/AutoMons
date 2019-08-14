@@ -12,4 +12,11 @@ for(var i = 0; i<playerCount; i++){
 		draw_set_color(c_lime)
 		draw_rectangle(room_width-150, 100+20*i, room_width-50, 100+20*i+16,true)
 	}
+	if(player == opId){
+		draw_set_color(c_red)
+		draw_rectangle(room_width-150, 100+20*i, room_width-50, 100+20*i+16,true)
+	if(isFakeBattle){
+		draw_sprite(fake_game,-1,room_width-160,100+20*i+8)
+	}
+	}
 }

@@ -15,4 +15,6 @@ switch(keyboard_lastkey){
 	case vk_enter:
 		update_name(myName)
 	break;
+	case vk_shift:
+	break;
 }
