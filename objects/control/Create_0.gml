@@ -1,4 +1,5 @@
-money = 100
+money = 1
+level = 1
 sellX = 100
 sellY = 300
 sellW = 150

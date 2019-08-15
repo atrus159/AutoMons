@@ -9,10 +9,22 @@ switch(messageId){
 		var rollCall = ds_list_create()
 		while(buffer_tell(buffer)<buffer_get_size(buffer)){
 			var pID = buffer_read(buffer,buffer_u8)
+			var newMoney = buffer_read(buffer,buffer_u8)
+			var newLevel = buffer_read(buffer,buffer_u8)
 			ds_list_add(rollCall,pID)
 			if(ds_list_find_index(players,pID) == -1){
 				ds_list_add(players,pID)
 				ds_map_add(playerNames,pID, "New Player")
+				ds_map_add(playerMoney,pID, newMoney)
+				ds_map_add(playerLevels,pID, newLevel)
+			}else{
+				ds_map_set(playerMoney,pID, newMoney)
+				ds_map_set(playerLevels,pID, newLevel)
+			}
+
+			if(pID == obj_client.myId && instance_exists(control)){
+				control.money = newMoney
+				control.level = newLevel
 			}
 			playerCount++
 		}
@@ -21,6 +33,8 @@ switch(messageId){
 			var curId = ds_list_find_value(players,i)
 			if(ds_list_find_index(rollCall,curId) == -1){
 				ds_map_delete(playerNames,curId)
+				ds_map_delete(playerLevels,curId)
+				ds_map_delete(playerMoney,curId)
 				ds_list_delete(players,i)
 				i--
 			}
@@ -85,5 +99,18 @@ switch(messageId){
 	case 6: //update opponents
 		opId = buffer_read(buffer,buffer_u8)
 		isFakeBattle = buffer_read(buffer,buffer_u8)
+	break;
+	case 7:
+	for(var i = 0; i<shop.shopSize; i++){
+		var pokeIndex = buffer_read(buffer,buffer_u8)
+		var pokeType = capFirst(ds_list_find_value(global.pokeLookup,pokeIndex))
+		var myMon = instance_create_depth(0,0,0,asset_get_index(pokeType))
+		var old = ds_list_find_value(shop.activeList,i)
+		if(old != noone){
+			instance_destroy(old)	
+		}
+		ds_list_replace(shop.activeList,i,myMon)
+	}	
+	shop.open = true
 	break;
 }

@@ -7,6 +7,7 @@ switch(state){
 					ds_list_replace(shop.activeList,pos, noone)
 				}
 				control.money -= cost
+				send_buy_request(object_get_name(object_index))
 				list_add(bench.benchList, id)
 				state = 1
 				bench.benchCount ++
@@ -60,6 +61,7 @@ switch(state){
 							ds_list_replace(shop.activeList,pos, noone)
 						}
 						control.money -= cost
+						send_buy_request(object_get_name(object_index))
 						instance_destroy(self)
 				}
 			}
