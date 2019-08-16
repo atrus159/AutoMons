@@ -1,6 +1,7 @@
 if(oldState != global.gameState){
 	switch(global.gameState){
 		case 0:
+		xp+=1
 		obj_client.opId = -1
 		obj_client.isFakeBattle = 0
 		with(ally_piece){

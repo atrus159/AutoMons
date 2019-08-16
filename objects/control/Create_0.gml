@@ -12,7 +12,7 @@ boardW = 8
 boardH = 8
 locked = false
 oldState = 0
-
+xp = 0
 global.pokeLookup = ds_list_create()
 ds_list_add(global.pokeLookup,"charmander")
 ds_list_add(global.pokeLookup,"charmeleon")
@@ -30,3 +30,24 @@ ds_list_add(global.pokeLookup,"pidgeot")
 ds_list_add(global.pokeLookup,"weedle")
 ds_list_add(global.pokeLookup,"kakuna")
 ds_list_add(global.pokeLookup,"beedrill")
+
+var b2 = 1
+var b3 = 1
+var b4 = 2
+var b5 = 4
+var b6 = 8
+var b7 = 16
+var b8 = 24
+var b9 = 32
+var b10 = 40
+levelBenchMarks = ds_list_create()
+ds_list_add(levelBenchMarks,0)
+ds_list_add(levelBenchMarks,b2)
+ds_list_add(levelBenchMarks,b2+b3)
+ds_list_add(levelBenchMarks,b2+b3+b4)
+ds_list_add(levelBenchMarks,b2+b3+b4+b5)
+ds_list_add(levelBenchMarks,b2+b3+b4+b5+b6)
+ds_list_add(levelBenchMarks,b2+b3+b4+b5+b6+b7)
+ds_list_add(levelBenchMarks,b2+b3+b4+b5+b6+b7+b8)
+ds_list_add(levelBenchMarks,b2+b3+b4+b5+b6+b7+b8+b9)
+ds_list_add(levelBenchMarks,b2+b3+b4+b5+b6+b7+b8+b9+b10)
