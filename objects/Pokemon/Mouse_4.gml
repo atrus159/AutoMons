@@ -93,6 +93,7 @@ switch(state){
 			 }
 		}else if(point_in_rectangle(x,y,control.sellX, control.sellY, control.sellX+control.sellW,control.sellY+control.sellH)){
 			control.money += cost
+			send_sell_request()
 			instance_destroy(self)
 
 	
