@@ -1055,6 +1055,22 @@
             }
         },
         {
+            "Key": "885791cc-cc8d-443e-9490-3bbc4c08198e",
+            "Value": {
+                "id": "da15c810-64a1-4e15-bb32-984de13bb305",
+                "resourcePath": "objects\\textBox\\textBox.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "89ae552a-60be-4e13-96c5-83ea877e51ae",
+            "Value": {
+                "id": "531f1d08-79ad-440a-ba39-967a15d98088",
+                "resourcePath": "scripts\\ipEnter\\ipEnter.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8b1506d7-dec6-47e0-bb2f-a7707447a22b",
             "Value": {
                 "id": "da362336-6a37-4852-9ed2-56536c3d87b9",
@@ -1396,6 +1412,14 @@
                 "id": "a43c1b79-7117-4fbf-8543-65dc540ac1e9",
                 "resourcePath": "objects\\Pidgeotto\\Pidgeotto.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b9f0466f-a64a-490e-8870-1da3c339432f",
+            "Value": {
+                "id": "3b7bdcba-6af4-41c5-b163-7672168609c6",
+                "resourcePath": "scripts\\nameEnter\\nameEnter.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1851,7 +1875,9 @@
         "b8e3722d-a868-44e0-89a9-54e65b19fcf9",
         "7c3f0514-0aa4-411b-9b17-d44f75e8309e",
         "09a16d95-92d4-4117-bd0b-bcd16dd2aa1a",
-        "8cdf5a0e-515b-4515-ab92-ed90e1168fb0"
+        "8cdf5a0e-515b-4515-ab92-ed90e1168fb0",
+        "89ae552a-60be-4e13-96c5-83ea877e51ae",
+        "b9f0466f-a64a-490e-8870-1da3c339432f"
     ],
     "tutorial": ""
 }

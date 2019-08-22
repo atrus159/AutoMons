@@ -1,0 +1,13 @@
+charIndex = 0
+blink = 30
+blinkToggle = 1
+blinkTime = 30
+promptX = 200
+promptY = 300
+textX = 250
+textY = 430
+enterScript = update_name
+prompt = ""
+text = ""
+promptColor = c_lime
+textColor = c_lime

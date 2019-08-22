@@ -1,8 +1,0 @@
-draw_set_font(UI_Font)
-draw_set_color(c_dkgray)
-draw_rectangle(200,400,500,500,false)
-draw_set_color(c_lime)
-draw_set_valign(fa_top)
-draw_set_halign(fa_left)
-draw_text(200,300,"Connected. Enter a name")
-draw_text(250,430,myName)
