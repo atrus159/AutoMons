@@ -53,6 +53,9 @@ switch(messageId){
 				if(curPiece != undefined && curPiece.piece_id == pieceId){
 					curPiece.x = relX
 					curPiece.y = relY
+					var typeIndex = buffer_read(buffer,buffer_u8)
+					curPiece.baseString = ds_list_find_value(global.pokeLookup,typeIndex)
+					curPiece.facing = buffer_read(buffer,buffer_u8)					
 					return
 				}
 			}
@@ -77,6 +80,9 @@ switch(messageId){
 				if(curPiece != undefined && curPiece.piece_id == pieceId){
 					curPiece.x = relX
 					curPiece.y = relY
+					var typeIndex = buffer_read(buffer,buffer_u8)
+					curPiece.baseString = ds_list_find_value(global.pokeLookup,typeIndex)
+					curPiece.facing = buffer_read(buffer,buffer_u8)	
 					return
 				}
 			}
