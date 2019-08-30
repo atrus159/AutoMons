@@ -9,7 +9,7 @@
         "3aabd287-3499-4316-ad94-1083840abc8d"
     ],
     "filterType": "GMSprite",
-    "folderName": "Charmander",
+    "folderName": "charmander",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

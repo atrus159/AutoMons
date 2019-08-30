@@ -9,7 +9,9 @@
         "b1313991-8ea5-4d78-831c-2852a2ae89a6",
         "4e343c54-8c21-4f73-bf83-8c4c0410cd88",
         "182373df-f5bd-4f7b-8343-7fa106a17415",
-        "1cb745f5-bae6-4f95-9c6d-87823fe0d909"
+        "1cb745f5-bae6-4f95-9c6d-87823fe0d909",
+        "753afb22-1396-4bda-bd64-e31f9b69408a",
+        "08084fa6-79c5-4cb1-9e83-de5a1ee2fb99"
     ],
     "filterType": "GMObject",
     "folderName": "pokemon",

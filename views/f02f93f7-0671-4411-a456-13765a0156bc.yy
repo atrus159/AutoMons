@@ -9,7 +9,7 @@
         "b18a3916-92c3-41c1-b0a3-0316654bdd89"
     ],
     "filterType": "GMObject",
-    "folderName": "charmander",
+    "folderName": "Charmander",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

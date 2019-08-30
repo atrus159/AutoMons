@@ -30,6 +30,11 @@ ds_list_add(global.pokeLookup,"pidgeot")
 ds_list_add(global.pokeLookup,"weedle")
 ds_list_add(global.pokeLookup,"kakuna")
 ds_list_add(global.pokeLookup,"beedrill")
+ds_list_add(global.pokeLookup,"bellsprout")
+ds_list_add(global.pokeLookup,"weepinbell")
+ds_list_add(global.pokeLookup,"victreebel")
+ds_list_add(global.pokeLookup,"swinub")
+ds_list_add(global.pokeLookup,"piloswine")
 
 var b2 = 1
 var b3 = 1
